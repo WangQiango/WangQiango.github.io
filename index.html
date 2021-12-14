@@ -43,7 +43,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="" class="js-avatar">
+			<img src="https://www.baidu.com/link?url=KKm6Q5HO2CSfZlrtGYzKWrLBhctaQf-nPv_d-djshedN7ajTage2BxYm0LYfO9jB1DNzZq7uxv12NE6qvp9QKaSEwyUUDm_NSshnpTHqn4y2k_5iUxbxj1p0PkqzIo5TepBxdxKz05lmABgBH_-jLBhUiGkWu8eHzA1i9E36JJqRS_a8Ya-aNPDI35d-rzhVOJbDONQDlq0aADh6komtj9221Fl1TwumduyaWDl2DcXhBrRZO4qsL1jtV1NRCyaQAI68y1UWVisVAz9ADVWik_otxPzDx1Sq_uFjnufpgQtuqjc5qQnPEvrogqJPuuyrOP2Xeag7_B7d0DBKPD5KOI1wZ_PNPc2NUEmS_TfRcMd-bDzoy6y6dYMzeQP2v1mctVrO9pZP5CTdISAWYLHHGzk0-HNmyKw-V3nw-dW9P4jLOOBwAljrLPJyV_4RLMEMywcPsfr2uDIFiLOJrZAxaVbgffkFNZzZQSkIh4RABjykO_eG0J2MOELD_VBhuPW01azev4Y0G7VCLwFhQnZ0rP2B7Yjm41t2jIEUy5b_t_eBs5_B487M_sqQ_5qu5-IItoKMKmeAfLTE5HB-13G5Y-5b4rXEQGilL4biThXuUCGznSS5nOPUhsHRaPNmI7nQixOWBLApZZV8kfaAWSG0OK&amp;wd=&amp;eqid=dfcbc0de000f9f2a0000000361b75d0a" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/"></a></h1>
@@ -101,7 +101,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="" class="js-avatar">
+				<img src="https://www.baidu.com/link?url=KKm6Q5HO2CSfZlrtGYzKWrLBhctaQf-nPv_d-djshedN7ajTage2BxYm0LYfO9jB1DNzZq7uxv12NE6qvp9QKaSEwyUUDm_NSshnpTHqn4y2k_5iUxbxj1p0PkqzIo5TepBxdxKz05lmABgBH_-jLBhUiGkWu8eHzA1i9E36JJqRS_a8Ya-aNPDI35d-rzhVOJbDONQDlq0aADh6komtj9221Fl1TwumduyaWDl2DcXhBrRZO4qsL1jtV1NRCyaQAI68y1UWVisVAz9ADVWik_otxPzDx1Sq_uFjnufpgQtuqjc5qQnPEvrogqJPuuyrOP2Xeag7_B7d0DBKPD5KOI1wZ_PNPc2NUEmS_TfRcMd-bDzoy6y6dYMzeQP2v1mctVrO9pZP5CTdISAWYLHHGzk0-HNmyKw-V3nw-dW9P4jLOOBwAljrLPJyV_4RLMEMywcPsfr2uDIFiLOJrZAxaVbgffkFNZzZQSkIh4RABjykO_eG0J2MOELD_VBhuPW01azev4Y0G7VCLwFhQnZ0rP2B7Yjm41t2jIEUy5b_t_eBs5_B487M_sqQ_5qu5-IItoKMKmeAfLTE5HB-13G5Y-5b4rXEQGilL4biThXuUCGznSS5nOPUhsHRaPNmI7nQixOWBLApZZV8kfaAWSG0OK&amp;wd=&amp;eqid=dfcbc0de000f9f2a0000000361b75d0a" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author"></h1>
@@ -151,6 +151,103 @@
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-多线程、线程池" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/12/14/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E3%80%81%E7%BA%BF%E7%A8%8B%E6%B1%A0/">多线程和线程池相关笔记</a>
+    </h1>
+  
+
+        
+        <a href="/2021/12/14/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E3%80%81%E7%BA%BF%E7%A8%8B%E6%B1%A0/" class="archive-article-date">
+  	<time datetime="2021-12-14T14:13:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-12-14</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="四种默认的线程池"><a href="#四种默认的线程池" class="headerlink" title="四种默认的线程池"></a>四种默认的线程池</h2><h3 id="1-FixedThreadPool"><a href="#1-FixedThreadPool" class="headerlink" title="1.FixedThreadPool"></a>1.FixedThreadPool</h3><p>由Executors的newFixedThreadPool方法创建。它是一种线程数量固定的线程池，当线程处于空闲状态时，他们并不会被回收，除非线程池被关闭。当所有的线程都处于活动状态时，新的任务都会处于等待状态，直到有线程空闲出来。FixedThreadPool只有核心线程，且该核心线程都不会被回收，这意味着它可以更快地响应外界的请求。jdk实现如下：</p>
+<pre><code>/*
+ * @param nThreads the number of threads in the pool
+ * @param threadFactory the factory to use when creating new threads
+ * @return the newly created thread pool
+ * @throws NullPointerException if threadFactory is null
+ * @throws IllegalArgumentException if &#123;@code nThreads &lt;= 0&#125;
+ */
+public static ExecutorService newFixedThreadPool(int nThreads, ThreadFactory threadFactory) &#123;
+    return new ThreadPoolExecutor(nThreads, nThreads,
+                                  0L, TimeUnit.MILLISECONDS,
+                                  new LinkedBlockingQueue&lt;Runnable&gt;(),
+                                  threadFactory);
+&#125;
+</code></pre>
+<p>由此可以看出，FixedThreadPool没有额外线程，只存在核心线程，而且核心线程没有超时机制，而且任务队列没有长度的限制。</p>
+<h3 id="2-CachedThreadPool"><a href="#2-CachedThreadPool" class="headerlink" title="2.CachedThreadPool"></a>2.CachedThreadPool</h3><p>由Executors的newCachedThreadPool方法创建，不存在核心线程，只存在数量不定的非核心线程，而且其数量最大值为Integer.MAX_VALUE。当线程池中的线程都处于活动时(全满),线程池会创建新的线程来处理新的任务，否则就会利用新的线程来处理新的任务，线程池中的空闲线程都有超时机制，默认超时时长为60s，超过60s的空闲线程就会被回收。和FixedThreadPool不同的是，CachedThreadPool的任务队列其实相当于一个空的集合，这将导致任何任务都会被执行，因为在这种场景下SynchronousQueue是不能插入任务的，SynchronousQueue是一个特殊的队列，在很多情况下可以理解为一个无法储存元素的队列。从CachedThreadPool的特性看，这类线程比较适合执行大量耗时较小的任务。当整个线程池都处于闲置状态时，线程池中的线程都会因为超时而被停止回收，几乎是不占任何系统资源。实现方式如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">public static ExecutorService newCachedThreadPool() &#123;</span><br><span class="line">           return new ThreadPoolExecutor(0, Integer.MAX_VALUE,</span><br><span class="line">                                         60L, TimeUnit.SECONDS,</span><br><span class="line">                                         new SynchronousQueue&lt;Runnable&gt;());</span><br><span class="line">       &#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-ScheduledThreadPool"><a href="#3-ScheduledThreadPool" class="headerlink" title="3.ScheduledThreadPool"></a>3.ScheduledThreadPool</h3><p>通过Executors的newScheduledThreadPool方式创建，核心线程数量是固定的，而非核心线程是没有限制的，并且当非核心线程闲置时它会被立即回收，ScheduledThreadPool这类线程池主要用于执行定时任务和具有固定时期的重复任务，实现方法如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">public static ScheduledExecutorService newScheduledThreadPool(int corePoolSize) &#123;</span><br><span class="line">       return new ScheduledThreadPoolExecutor(corePoolSize);</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">public ScheduledThreadPoolExecutor(int corePoolSize) &#123;</span><br><span class="line">       super(corePoolSize, Integer.MAX_VALUE,</span><br><span class="line">             DEFAULT_KEEPALIVE_MILLIS, MILLISECONDS,</span><br><span class="line">             new DelayedWorkQueue());</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+<p>4.SingleThreadExecutor<br>通过Executors的newSingleThreadExecutor方法来创建。这类线程池内部只有一个核心线程，它确保所有的任务都在同一个线程中按顺序执行。SingleThreadExecutor的意义在于统一所有外界任务一个线程中，这使得这些任务之间不需要处理线程同步的问题，实现方式如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">public static ExecutorService newSingleThreadExecutor() &#123;</span><br><span class="line">    return new FinalizableDelegatedExecutorService</span><br><span class="line">        (new ThreadPoolExecutor(1, 1,</span><br><span class="line">                                0L, TimeUnit.MILLISECONDS,</span><br><span class="line">                                new LinkedBlockingQueue&lt;Runnable&gt;()));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="主线程等待所有子线程结束之后再执行的方法："><a href="#主线程等待所有子线程结束之后再执行的方法：" class="headerlink" title="主线程等待所有子线程结束之后再执行的方法："></a>主线程等待所有子线程结束之后再执行的方法：</h2><h3 id="1-使用线程池的shutdown-方法"><a href="#1-使用线程池的shutdown-方法" class="headerlink" title="1.使用线程池的shutdown()方法"></a>1.使用线程池的shutdown()方法</h3><pre><code>当线程池调用该方法时,线程池的状态则立刻变成SHUTDOWN状态。此时，则不能再往线程池中添加任何任务，否则将会抛出RejectedExecutionException异常。但是，此时线程池不会立刻退出，直到添加到线程池中的任务都已经处理完成，才会退出。 
+</code></pre>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ThreadTest</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> ThreadPoolExecutor threadPoolExecutor = <span class="keyword">new</span> ScheduledThreadPoolExecutor(<span class="number">5</span>);</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> InterruptedException </span>&#123;</span><br><span class="line">        <span class="keyword">long</span> start = System.currentTimeMillis();</span><br><span class="line">        threadPoolExecutor.execute(()-&gt;method1());</span><br><span class="line">        threadPoolExecutor.execute(()-&gt;method2());</span><br><span class="line">        threadPoolExecutor.execute(()-&gt;method3());</span><br><span class="line">        threadPoolExecutor.execute(()-&gt;method4());</span><br><span class="line">        threadPoolExecutor.execute(()-&gt;method5());</span><br><span class="line">        threadPoolExecutor.shutdown();</span><br><span class="line">        <span class="keyword">while</span> (<span class="keyword">true</span>)&#123;</span><br><span class="line">            <span class="keyword">if</span> (threadPoolExecutor.isTerminated())&#123;</span><br><span class="line">                System.out.println(i);</span><br><span class="line">                <span class="keyword">long</span> end = System.currentTimeMillis();</span><br><span class="line">                System.out.println(Thread.currentThread().getName()+<span class="string">&quot;总共耗时：&quot;</span>+(end-start)+<span class="string">&quot;ms,count=&quot;</span>+t.toString());</span><br><span class="line">                <span class="keyword">return</span>;</span><br><span class="line">            &#125;<span class="keyword">else</span></span><br><span class="line">                Thread.sleep(<span class="number">50</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-使用Thread的join-方法"><a href="#2-使用Thread的join-方法" class="headerlink" title="2.使用Thread的join()方法"></a>2.使用Thread的join()方法</h3><pre><code>可以理解成在当前线程执行thread.join()后thread这个线程会先执行，当前线程需要等待thread线程死亡之后才能继续执行thread.join()后面的代码；执行多个线程的join()方法之后，就需要等待多个线程全部结束之后再继续往下执行。
+</code></pre>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ThreadTest2</span> </span>&#123;</span><br><span class="line"> <span class="comment">//假设要做五件互不干扰的相同的事情，等五件事情全部做完之后再做一个总结</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> InterruptedException </span>&#123;</span><br><span class="line">        <span class="keyword">long</span> start = System.currentTimeMillis();</span><br><span class="line">        Vector&lt;Thread&gt; threadVector = <span class="keyword">new</span> Vector&lt;&gt;();</span><br><span class="line">        Thread thread1 = <span class="keyword">new</span> Thread(()-&gt;&#123;</span><br><span class="line">            method1();</span><br><span class="line">        &#125;);</span><br><span class="line">        threadVector.add(thread1);</span><br><span class="line">        thread1.start();</span><br><span class="line">        Thread thread1 = <span class="keyword">new</span> Thread(()-&gt; method1());</span><br><span class="line">        threadVector.add(thread1);</span><br><span class="line">        thread1.start();</span><br><span class="line">        Thread thread2 = <span class="keyword">new</span> Thread(()-&gt; method2());</span><br><span class="line">        threadVector.add(thread2);</span><br><span class="line">        thread2.start();</span><br><span class="line">        Thread thread3 = <span class="keyword">new</span> Thread(()-&gt; method3());</span><br><span class="line">        threadVector.add(thread3);</span><br><span class="line">        thread3.start();</span><br><span class="line">        Thread thread4 = <span class="keyword">new</span> Thread(()-&gt; method4());</span><br><span class="line">        threadVector.add(thread4);</span><br><span class="line">        thread4.start();</span><br><span class="line">        Thread thread5 = <span class="keyword">new</span> Thread(()-&gt; method5());</span><br><span class="line">        threadVector.add(thread5);</span><br><span class="line">        thread5.start();</span><br><span class="line">        <span class="keyword">for</span> (Thread thread : threadVector) &#123;</span><br><span class="line">            thread.join();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">long</span> end = System.currentTimeMillis();</span><br><span class="line">        System.out.println(Thread.currentThread().getName()+<span class="string">&quot;总共耗时：&quot;</span>+(end-start)+<span class="string">&quot;ms,count=&quot;</span>+t.toString());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-使用CountDownLatch"><a href="#3-使用CountDownLatch" class="headerlink" title="3.使用CountDownLatch"></a>3.使用CountDownLatch</h3><pre><code>大概理解成计数器的意思
+</code></pre>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ThreadTest3</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> ThreadPoolExecutor threadPoolExecutor = <span class="keyword">new</span> ScheduledThreadPoolExecutor(<span class="number">5</span>);</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">long</span> start = System.currentTimeMillis();</span><br><span class="line">        <span class="keyword">final</span> CountDownLatch latch = <span class="keyword">new</span> CountDownLatch(<span class="number">5</span>);</span><br><span class="line">        threadPoolExecutor.execute(()-&gt;&#123;</span><br><span class="line">            method1();</span><br><span class="line">            latch.countDown();</span><br><span class="line">        &#125;);</span><br><span class="line">        threadPoolExecutor.execute(()-&gt;&#123;</span><br><span class="line">            method2();</span><br><span class="line">            latch.countDown();</span><br><span class="line">        &#125;);</span><br><span class="line">        threadPoolExecutor.execute(()-&gt;&#123;</span><br><span class="line">            method3();</span><br><span class="line">            latch.countDown();</span><br><span class="line">        &#125;);</span><br><span class="line">        threadPoolExecutor.execute(()-&gt;&#123;</span><br><span class="line">            method4();</span><br><span class="line">            latch.countDown();</span><br><span class="line">        &#125;);</span><br><span class="line">        threadPoolExecutor.execute(()-&gt;&#123;</span><br><span class="line">            method5();</span><br><span class="line">            latch.countDown();</span><br><span class="line">        &#125;);</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            latch.await();</span><br><span class="line">            System.out.println(<span class="string">&quot;主线程执行&quot;</span>+ (System.currentTimeMillis()-start)+<span class="string">&quot;t=&quot;</span>+t);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (InterruptedException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/12/14/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E3%80%81%E7%BA%BF%E7%A8%8B%E6%B1%A0/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
   
     <article id="post-我的第一篇文章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
